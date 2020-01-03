@@ -2308,7 +2308,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #676c49;
+  background: #2baf18;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -4633,9 +4633,6 @@ section#posts {
   bottom: 200px;
   position: relative;
 }
-.aplayer-body {
-  display: none;
-}
 canvas#live2d {
   display: none;
 }
@@ -4729,6 +4726,9 @@ i.symbolic-animals.icon-pig {
   position: relative;
   right: 880px;
   bottom: 2px;
+}
+div#BadApplePlayer {
+  left: -370px;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
