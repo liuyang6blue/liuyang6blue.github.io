@@ -2308,7 +2308,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3096a4;
+  background: #ff47d0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3555,7 +3555,7 @@ header.post-header {
 #days {
   display: block;
   color: #07b39b;
-  font-size: 13px;
+  font-size: 15px;
 }
 .menu-item:hover {
   -webkit-transform: scale(1.1);
@@ -4145,7 +4145,7 @@ span.focus-links:hover {
 .site-meta .site-title {
   font-size: 28px;
   font-family: 'Comic Sans MS', sans-serif;
-  color: #fff;
+  color: #3dce82;
 }
 .footer-inner {
   font-family: 'Comic Sans MS', sans-serif;
@@ -4627,6 +4627,108 @@ a {
     padding: 10px 0;
     background-image: linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%) !important;
   }
+}
+section#posts {
+/* margin: 0px; */
+  bottom: 200px;
+  position: relative;
+}
+.aplayer-body {
+  display: none;
+}
+canvas#live2d {
+  display: none;
+}
+div#waifu {
+  display: none;
+}
+div#waifu-toggle {
+  display: none;
+}
+span.sw-typography.sw-bar-slim-location.sc-bwzfXH.dsrBSL {
+  margin-left: 5px;
+}
+#list {
+  display: none;
+}
+.player {
+  margin-top: -10px;
+  margin-right: -17px;
+}
+player {
+  position: relative;
+  right: 9px;
+}
+span#busuanzi_value_site_uv {
+  color: #49b1f5;
+}
+span#busuanzi_value_site_pv {
+  color: #49b1f5;
+}
+.chinese-zodiac {
+  float: right;
+}
+@font-face {
+  font-family: 'chinese-zodiac';
+  font-display: swap;
+  src: url("/fonts/chinese-zodiac.eot");
+  src: url("/fonts/chinese-zodiac.eot") format('embedded-opentype'), url("/fonts/chinese-zodiac.woff2") format('woff2'), url("/fonts/chinese-zodiac.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.symbolic-animals {
+  display: inline-block;
+  font: normal normal normal 14px/1 chinese-zodiac;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-dragon:before {
+  content: '\e806';
+}
+.icon-tiger:before {
+  content: '\e809';
+}
+.icon-pig:before {
+  content: '\e810';
+}
+.icon-horse:before {
+  content: '\e813';
+}
+.icon-rat:before {
+  content: '\e816';
+}
+.icon-goat:before {
+  content: '\e818';
+}
+.icon-snake:before {
+  content: '\e820';
+}
+.icon-ox:before {
+  content: '\e822';
+}
+.icon-dog:before {
+  content: '\e825';
+}
+.icon-rabbit:before {
+  content: '\e826';
+}
+.icon-monkey:before {
+  content: '\e829';
+}
+.icon-rooster:before {
+  content: '\e82f';
+}
+i.symbolic-animals.icon-rat {
+  position: relative;
+  right: 880px;
+  bottom: 2px;
+}
+i.symbolic-animals.icon-pig {
+  position: relative;
+  right: 880px;
+  bottom: 2px;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
