@@ -2308,7 +2308,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #38d5ff;
+  background: #ff2ff0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -4729,6 +4729,18 @@ i.symbolic-animals.icon-pig {
 }
 div#BadApplePlayer {
   left: -370px;
+}
+button.vsubmit.vbtn {
+  background: #b2facd;
+}
+.comments .vwrap {
+  border: 1px solid #9fe7ad !important;
+}
+.vcard {
+  border: 1px solid #efc6b4 !important;
+}
+.power.txt-right {
+  display: none;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {

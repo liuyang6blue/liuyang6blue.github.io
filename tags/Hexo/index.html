@@ -98,12 +98,12 @@
 
 
 
+<meta name="description" content="一花一世界">
 <meta property="og:type" content="website">
-<meta property="og:title" content="诗情画意">
-<meta property="og:url" content="http://yoursite.com/life/index.html">
+<meta property="og:title" content="Blue">
+<meta property="og:url" content="http://yoursite.com/tags/Hexo/index.html">
 <meta property="og:site_name" content="Blue">
-<meta property="article:published_time" content="2020-01-01T12:28:51.000Z">
-<meta property="article:modified_time" content="2020-01-03T16:24:41.230Z">
+<meta property="og:description" content="一花一世界">
 <meta property="article:author" content="Liuyang">
 <meta property="article:tag" content="开开心心">
 <meta name="twitter:card" content="summary">
@@ -136,7 +136,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/life/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/Hexo/"/>
 
 
 
@@ -154,7 +154,7 @@
     })();
 </script>
 
-  <title>诗情画意 | Blue</title>
+  <title>标签: Hexo | Blue</title>
 
   
       <!-- 球型气泡标签云 -->
@@ -185,7 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <!--fork me from github-->
@@ -356,36 +356,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
+  
+  
+  
+  <div class="post-block tag">
 
-	<h2 class="post-title" itemprop="name headline">诗情画意</h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        
-        
-          
-        
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h2>Hexo<small>标签</small>
+        </h2>
       </div>
+
       
-      
+        
+
+  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="my-post-header">
+
+      <div class="my-post-meta">
+        <time class="my-post-time" itemprop="dateCreated"
+              datetime="2020-01-04T13:48:32+08:00"
+              content="2020-01-04" >
+          01-04
+        </time>
+      </div>
+
+      <h3 class="my-post-title">
+        
+            <a class="my-post-title-link" href="/2020/01/04/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" itemprop="url">
+              
+                <span itemprop="name">Github + Hexo + Next主题博客搭建教程</span>
+              
+            </a>
+        
+      </h3>
+
+    </header>
+  </article>
+
+
       
     </div>
-    
-    
-    
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -393,13 +411,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-  
-
-
 
 
 
@@ -1099,10 +1110,6 @@ show_date_time();
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
@@ -1638,13 +1645,13 @@ show_date_time();
       var articles = db.collection('articles')
 
       //https://hexo.io/zh-tw/docs/variables.html
-      var isPost = '诗情画意'.length > 0
+      var isPost = ''.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
-      var urlPath = 'life/index.html';
-      var urlFullPath = 'http://yoursite.com/life/index.html';
+      var urlPath = 'tags/Hexo/index.html';
+      var urlFullPath = '';
       var indexPath = 'index.html'; //首页链接
       var isMenu = false;
       
@@ -1699,7 +1706,7 @@ show_date_time();
 
     //  if (isPost) { //is article page
       if (!isMenu) { // 非菜单页、非主页（即在某篇文章链接里）
-        var title = '诗情画意'
+        var title = ''
         var doc = articles.doc(title)
 
       //  getCount(doc, true).then(appendCountTo($('.post-meta')))
@@ -1709,7 +1716,7 @@ show_date_time();
       else if (urlPath == indexPath) { // 主页
         var titles = [] //array to titles
 
-        var postsstr = '' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("Github + Hexo + Next主题博客搭建教程");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {

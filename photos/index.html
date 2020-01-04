@@ -98,20 +98,17 @@
 
 
 
-<meta name="description" content="img.imgitem {                       width: 300px;                       height: 200px;                       position: relative;                       left: -0px;">
+<meta name="description" content=".posts-expand .post-body img{         padding: 1px;     }     &#x2F;* 侧边隐藏 *&#x2F;     .header-inner {         display: none;     }     .sidebar-inner.affix-top {     display: none">
 <meta property="og:type" content="website">
 <meta property="og:title" content="画廊">
 <meta property="og:url" content="http://yoursite.com/photos/index.html">
 <meta property="og:site_name" content="Blue">
-<meta property="og:description" content="img.imgitem {                       width: 300px;                       height: 200px;                       position: relative;                       left: -0px;">
-<meta property="og:image" content="http://yoursite.com/photos/+xmllink+">
-<meta property="og:image" content="http://yoursite.com/photos/+xmllink+">
+<meta property="og:description" content=".posts-expand .post-body img{         padding: 1px;     }     &#x2F;* 侧边隐藏 *&#x2F;     .header-inner {         display: none;     }     .sidebar-inner.affix-top {     display: none">
 <meta property="article:published_time" content="2020-01-02T07:11:18.000Z">
-<meta property="article:modified_time" content="2020-01-02T12:44:09.837Z">
+<meta property="article:modified_time" content="2020-01-04T12:58:01.027Z">
 <meta property="article:author" content="Liuyang">
 <meta property="article:tag" content="开开心心">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/photos/+xmllink+">
 
 
 
@@ -179,7 +176,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
   
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -380,51 +377,289 @@
       <div class="post-body">
         
         
-          <style type="text/css">
-                    img.imgitem {
-                      width: 300px;
-                      height: 200px;
-                      position: relative;
-                      left: -0px;
-                    }
+          <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 页面的宽度与设备屏幕的宽度一致
+         初始缩放比例 1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-                    li {
-                      list-style: none;
-                    }
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-                    .box span strong {
-                      background: #df9d9b;
-                      padding: 15px 20px;
-                      position: relative;
-                      left: 462px;
-                    }
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style type="text/css">
+    .posts-expand .post-body img{
+        padding: 1px;
+    }
+    /* 侧边隐藏 */
+    .header-inner {
+        display: none;
+    }
+    .sidebar-inner.affix-top {
+    display: none !important;
+    }
+    .content-wrap {
+      /* width: calc(100% - 260px); */
+      width: 100%;
+    }
+    /*bootstrap导航样式*/
+    nav.navbar.navbar-default.navbar-fixed-top {
+    width: 1519.5px !important;
+    position: absolute !important;
+    left:-175px !important;
+    background: lightpink;
+    }
+    li {
+    list-style: none;
+    display: inline-block;
+    }
+    /*修改小杨相册样式*/
+    .active span {
+        display: block;
+        font-size: 35px;
+        color: white;
+        position: relative;
+        right: 130px;
+    }
+    div#box {
+    margin-top: 40px;
+    }
 
-                    button.title {
-                      display: none;
-                    }
+    /*  */
+    .footer{
+        display: none !important;
+    }
 
-                    #box p {
-                      display: none;
-                    }
+     /*不展示底部*/
+     .footer-inner{
+         display: none !important;
+     }
 
-                    div#box {
-                      text-align: center;
-                    }
+    .v * {
+        color: #f4f4f4 !important;
+    }
 
-                    #box span {
-                      font-size: 20px;
-                      font-weight: bold;
-                      color: #666;
-                    }
-                    /* 改变图片名称样式 */
-                    span {
-                      position: relative;
-                      bottom: 50px;
-                    }
-                  </style>
+    .v .vwrap .vmark .valert .vcode {
+        background: #00050b !important;
+    }
 
+     /*不展示侧栏*/
+     .sidebar-toggle{
+         display: none !important;
+     }
+
+    /*修改相册页面内容宽度为全屏*/
+    .main-inner{
+        width: 100%;
+        margin-top: unset;
+    }
+
+    /*修改主体页面样式*/
+    .main {
+        padding-bottom: 150px;
+        margin-top: 0px;
+        background: white;
+    }
+
+    /*body体样式*/
+    body {
+        background-image: unset;
+        background-attachment: unset;
+        background-size: 100%;
+    }
+
+    .header{
+        background: rgba(28, 25, 25, 0.6);
+        border-bottom: unset;
+    }
+
+    .menu .menu-item a{
+        font-weight: 300;
+           color: #222;
+    }
+
+    .imgbox{
+      width: 100%;
+      overflow: hidden;
+      border-right: 0px solid #bcbcbc;
+    }
+
+    .box{
+        visibility: visible;
+        overflow: auto; 
+        zoom: 1;
+    }
+
+    .box li{
+        float: left;
+        width: 25%;  /*每个框占25%*/
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        /*display: inline;*/
+        padding: 0;
+        height: 400px;   /*固定高度*/
+    }
+
+    .box li span{
+        display: block;
+        padding: 4% 7% 10% 7%;
+        min-height: 80px;
+        color: #000000;
+        font-size: 18px;
+        /*#121212*/
+        background: white;
+        font-weight: 600;
+        line-height: 26px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    img.imgitem{
+        padding: unset;
+        padding: unset;
+        border: unset;
+        position: relative;
+        padding: 0px;
+        width: 100%;
+        height: 350px;
+    }
+
+    div#comments.comments.v {
+        border: 0px;
+        margin: auto !important;
+        margin-top: unset;
+        margin-left: unset;
+        margin-right: unset;
+        width: 60%;
+        padding-top: 50px;
+    }
+
+    div#posts.posts-expand {
+        border: unset;
+        padding: unset;
+        margin-bottom: 10px;
+    }
+
+    .valine .vlist .vcard .vcomment-body .vhead .vname{
+        color: #fff;
+    }
+
+    .valine .vlist .vcard .vcomment-body .text-wrapper .vcomment p{
+        color: #fff;
+    }
+
+    .box p{
+        display: block;
+        background: #121212;
+        color: #fff;
+        font-size: 12px;
+        font-family: 'SwisMedium';
+        text-align: center;
+    }
+
+    .box span strong{
+        background: rgba(0,0,0,0.4);
+        padding: 20px;
+        font-family: serif, sans-serif;
+    }
+
+    .posts-expand .post-title {
+        display: none;
+    }
+    .title{
+        display: inline-block;
+        vertical-align: middle;
+        font: 85px/250px 'ChaletComprimeMilanSixty';
+        background-position: left bottom !important;
+        color: #fff;
+        background-size: 100% auto !important; 
+        -webkit-background-size: cover; 
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        width: 100%;
+        text-align: center;
+        border: unset;
+        height: 580px;
+        cursor: unset !important;
+        -webkit-box-sizing: border-box;
+        /*box-sizing: border-box;*/
+    }
+    .btn-more-posts{
+        display: inline-block;
+        vertical-align: middle;
+        font: 85px/250px 'ChaletComprimeMilanSixty';
+        color: #000;
+        width: 100%;
+        text-align: center;
+        border: unset;
+        height: 400px;
+        background-color: #121212;
+        /*-webkit-box-sizing: border-box;*/
+        /*box-sizing: border-box;*/
+    }
+
+@media (max-width: 767px){
+    .box li {
+        width: 100%;
+        height: auto;
+    }
+    .title {
+        height: 200px;
+    }
+
+    .posts-expand .post-body img{
+        box-sizing: none;
+        padding: 0px !important;
+    }
+
+    .box span {
+        min-height: 80px;
+        border-right: unset;
+        font-size: 17px;
+    }
+    .box p{
+        border-right: unset;
+        font-size: 12px;
+    }
+
+    .posts-expand {
+        margin: unset;
+    }
+    div#comments.comments.v {
+        width: 96%;
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 1300px){
+    .container .main-inner{
+        width: 100%;
+    }
+}
+
+/*首页图标*/
+a.menu-item-icon.fa.fa-fw.fa-home {
+    position: relative;
+    right: 130px;
+}
+</style>
+<meta name="generator" content="Hexo 4.2.0"></head>
+<div id="topP">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <li class="active"><span>小杨的相册</span></li>
+        <li><a href="/" class="menu-item-icon fa fa-fw fa-home"></a></li>
+    </div>
+    </nav>
+</div>
+<!-- 主体部分 -->
 <div id="box" class="box"></div>
-
 
 <script type="text/javascript">
 
@@ -466,19 +701,17 @@ function loadXMLDoc(xmlUrl)
     return xmlDoc; 
 }
 
-var xmllink="https://exampleblue-1301047842.cos.ap-chengdu.myqcloud.com/"
-//访问域名链接就是我上面提到的那个访问域名xml链接
+xmlDoc=loadXMLDoc("https://exampleblue-1301047842.cos.ap-chengdu.myqcloud.com/");
 
-xmlDoc=loadXMLDoc(xmllink);
-var urls=xmlDoc.getElementsByTagName('Key');
-var date=xmlDoc.getElementsByTagName('LastModified');
-var wid=250;
-var showNum=12; //每个相册一次展示多少照片
-if ((window.innerWidth)>1200) {wid=(window.innerWidth*3)/18;}
-var box=document.getElementById('box');
-var i=0;
+var urls = xmlDoc.getElementsByTagName('Key');
+var date = xmlDoc.getElementsByTagName('LastModified');
+var wid = 350;
+var showNum = 21; //每个相册一次展示多少照片
+if ((window.innerWidth) > 1200) { wid = (window.innerWidth * 3) / 18;}
+var box = document.getElementById('box');
+var i = 0;
 
-var content=new Array();
+var content = new Array();
 var tmp=0;
 var kkk=-1;
 for (var t = 0; t < urls.length ; t++) {
@@ -501,22 +734,24 @@ for (var i = 0; i < content.length; i++) {
     box.appendChild(conBox);
     var item=document.createElement("div");
     var title=content[i][0].url;
-    item.innerHTML="<button class=title style=background:url("+xmllink+'/'+title+"封面.jpg"+");><span style=display:inline;><strong style=color:#f0f3f6; >"+title.substring(0,title.length-1)+"</strong></span></button>";
+    item.innerHTML="<button class=title style=background:url(https://exampleblue-1301047842.cos.ap-chengdu.myqcloud.com/" + title + "封面.jpg"+");background-repeat:no-repeat;><span style=display:inline;><strong style=color:#f0f3f6; >" + title.substring(0,title.length - 1) + "</strong></span></button>";
     conBox.appendChild(item);
 
-    for (var j = 1; j < content[i].length && j < showNum+1; j++) {
-        var con=content[i][j].url;
+        for (var j = 1; j < content[i].length && j < showNum+1; j++) {
+            var con=content[i][j].url;
         var item=document.createElement("li");
-        item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src="+xmllink+'/'+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4)+"</span><p>上传于"+content[i][j].date+"</p>";
-        conBox.appendChild(item);
+        if(con.substring(0,con.length-4) != "封面"){
+            item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src=https://exampleblue-1301047842.cos.ap-chengdu.myqcloud.com/" + title + con +" alt=" + con + "></div><span>" + con.substring(0,con.length-4);
+            conBox.appendChild(item);
+        }
     }
     if(content[i].length > showNum){
         var moreItem=document.createElement("button");
-        moreItem.className="btn-more-posts";
-        moreItem.id="more"+i;
-        moreItem.value=showNum+1;
-        let cur=i;
-        moreItem.onclick= function (){
+        moreItem.className = "btn-more-posts";
+        moreItem.id = "more" + i;
+        moreItem.value = showNum + 1;
+        let cur = i;
+        moreItem.onclick = function (){
             moreClick(this,cur,content[cur],content[cur][0].url);
         }
         moreItem.innerHTML="<span style=display:inline;><strong style=color:#f0f3f6;>加载更多</strong></span>";
@@ -525,16 +760,18 @@ for (var i = 0; i < content.length; i++) {
 }
 
 function moreClick(obj,cur,cont,title){
-    var parent=obj.parentNode;
+    var parent = obj.parentNode;
     parent.removeChild(obj);
     var j=obj.value;
     var begin=j;
     for ( ; j < cont.length && j < Number(showNum) + Number(begin); j++) {
-        console.log( Number(showNum) + Number(begin));
         var con=cont[j].url;
         var item=document.createElement("li");
-        item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src="+xmllink+'/'+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4)+"</span><p>上传于"+cont[j].date+"</p>";
+        item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src=https://exampleblue-1301047842.cos.ap-chengdu.myqcloud.com/"+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4);
         parent.appendChild(item);
+        var v=item.getElementsByTagName('img');
+        v[0].id=imgid;
+        imgid++;
     }
     if(cont.length > j){
         obj.value=j;
@@ -560,6 +797,9 @@ function moreClick(obj,cur,cont,title){
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -609,7 +849,7 @@ function moreClick(obj,cur,cont,title){
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">文章</span>
                 </a>
               </div>
@@ -620,7 +860,7 @@ function moreClick(obj,cur,cont,title){
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -631,7 +871,7 @@ function moreClick(obj,cur,cont,title){
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -706,6 +946,10 @@ function moreClick(obj,cur,cont,title){
                   
                   
                     <li class='my-links-of-blogroll-li'>
+                      <a href="/2020/01/04/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" title="Github + Hexo + Next主题博客搭建教程" target="_blank">Github + Hexo + Next主题博客搭建教程</a>
+                    </li>
+                  
+                    <li class='my-links-of-blogroll-li'>
                       <a href="/2020/01/03/%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83/" title="添加文章版权" target="_blank">添加文章版权</a>
                     </li>
                   
@@ -719,10 +963,6 @@ function moreClick(obj,cur,cont,title){
                   
                     <li class='my-links-of-blogroll-li'>
                       <a href="/2019/12/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="Markdown 示范" target="_blank">Markdown 示范</a>
-                    </li>
-                  
-                    <li class='my-links-of-blogroll-li'>
-                      <a href="/2019/12/30/hello-world/" title="Hello World" target="_blank">Hello World</a>
                     </li>
                   
                 </ul>
@@ -1073,7 +1313,7 @@ show_date_time();
       <h3 class="widget-title">Tag Cloud</h3>
       <div id="myCanvasContainer" class="widget tagcloud">
           <canvas width="250" height="250" id="resCanvas" style="width=100%">
-              <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Next/" rel="tag">Next</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%87%E7%AD%BE%E4%BA%91/" rel="tag">标签云</a><span class="tag-list-count">1</span></li></ul>
+              <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Next/" rel="tag">Next</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%87%E7%AD%BE%E4%BA%91/" rel="tag">标签云</a><span class="tag-list-count">1</span></li></ul>
           </canvas>
       </div>
       </div>
@@ -1123,8 +1363,8 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <!--<span class="post-count">全站共301字 &nbsp;|&nbsp; Since 2020/01/01 元旦</span>-->
-  <span class="post-count fa fa-area-chart">301 &nbsp;|&nbsp; Since 2020/01/01 元旦</span>
+  <!--<span class="post-count">全站共2.6k字 &nbsp;|&nbsp; Since 2020/01/01 元旦</span>-->
+  <span class="post-count fa fa-area-chart">2.6k &nbsp;|&nbsp; Since 2020/01/01 元旦</span>
 </div>
 
         
@@ -1304,6 +1544,36 @@ show_date_time();
 
 
 
+
+   <script src="https://github.com/DesertsP/Valine/releases/download/v1.2.0/Valine.min.js"></script>
+  <script src="/js/src/Valine.min.js"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7-rc3/dist/Valine.min.js"></script>
+  
+  <!-- https://deserts.io/diy-a-comment-system/ -->
+  <script type="text/javascript">
+    new Valine({
+        lang: 'zh-cn',
+        admin_email: '530022025@qq.com', //博主邮箱
+        el: '#comments' ,
+        appId: 'Y6sHmEuePRpPWDd5Yv45nEWL-MdYXbMMI',
+        appKey: 'hLz1Wo8jhbxGo5oQFQ59Gp6a',
+        emoticon_url: 'https://cloud.panjunwen.com/alu',
+        emoticon_list: ["吐.png","喷血.png","狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","中指.png","尴尬.png","瞅你.png","想一想.png","中枪.png","得意.png","肿包.png","扇耳光.png","亲亲.png","惊喜.png","脸红.png","无所谓.png","便便.png","愤怒.png","蜡烛.png","献黄瓜.png","内伤.png","投降.png","观察.png","看不见.png","击掌.png","抠鼻.png","邪恶.png","看热闹.png","口水.png","抽烟.png","锁眉.png","装大款.png","吐舌.png","无奈.png","长草.png","赞一个.png","呲牙.png","无语.png","阴暗.png","不出所料.png","咽气.png","期待.png","高兴.png","吐血倒地.png","哭泣.png","欢呼.png","黑线.png","喜极而泣.png","喷水.png","深思.png","鼓掌.png","暗地观察.png"],
+        placeholder: '&#x270d;写评论',
+  });
+
+  <!--点击邮件中的链接跳转至相应评论-->
+  if(window.location.hash){
+      var checkExist = setInterval(function() {
+         if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+         }
+      }, 100);
+   }
+
+  </script>
 
 
 
@@ -1704,6 +1974,163 @@ show_date_time();
 
 
   
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+  
+  <script>
+    (function () {
+
+      firebase.initializeApp({
+        apiKey: 'AIzaSyAluu68FvkcjbTXDeSKerInOPhZnInJyxA',
+        projectId: 'blueblog-a1bd9'
+      })
+
+      function getCount(doc, url, increaseCount) {
+        //increaseCount will be false when not in article page
+
+        return doc.get().then(function (d) {
+          var count
+          if (!d.exists) { //has no data, initialize count
+            if (increaseCount) {
+              doc.set({
+                count: 1,
+                'url': url
+              })
+              count = 1
+            }
+            else {
+              count = 0
+            }
+          }
+          else { //has data
+            count = d.data().count
+            if (increaseCount) {
+              if (!(window.localStorage && window.localStorage.getItem(title))) { //if first view this article
+                doc.set({ //increase count
+                  count: count + 1,
+                  'url': url
+                })
+                count++
+              }
+            }
+          }
+          if (window.localStorage && increaseCount) { //mark as visited
+            localStorage.setItem(title, true)
+          }
+
+          return count
+        })
+      }
+
+      function appendCountTo(el) {
+        return function (count) {
+          $(el).append(
+            $('<span>').addClass('post-visitors-count').append(
+              $('<span>').addClass('post-meta-divider').text('|')
+            ).append(
+              $('<span>').addClass('post-meta-item-icon').append(
+               // $('<i>').addClass('fa fa-users')
+                $('<i>').addClass('fa fa-eye')
+              )
+              ).append($('<span>').text('浏览 ' + count + ' 次'))
+          )
+        }
+      }
+
+      var db = firebase.firestore()
+      var articles = db.collection('articles')
+
+      //https://hexo.io/zh-tw/docs/variables.html
+      var isPost = '画廊'.length > 0
+      var isArchive = '' === 'true'
+      var isCategory = ''.length > 0
+      var isTag = ''.length > 0
+
+      var urlPath = 'photos/index.html';
+      var urlFullPath = 'http://yoursite.com/photos/index.html';
+      var indexPath = 'index.html'; //首页链接
+      var isMenu = false;
+      
+         
+         var menuLink = '/';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      
+         
+         var menuLink = '/archives/';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      
+         
+         var menuLink = '/categories/';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      
+         
+         var menuLink = '/tags/';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      
+         
+         var menuLink = '/life/';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      
+         
+         var menuLink = '/photos';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      
+         
+         var menuLink = '/about/';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      
+         
+         var menuLink = '/links/';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      
+
+    //  if (isPost) { //is article page
+      if (!isMenu) { // 非菜单页、非主页（即在某篇文章链接里）
+        var title = '画廊'
+        var doc = articles.doc(title)
+
+      //  getCount(doc, true).then(appendCountTo($('.post-meta')))
+        getCount(doc, urlFullPath, true).then(appendCountTo($('.post-wordcount')))
+      }
+     // else if (!isArchive && !isCategory && !isTag) { //is index page
+      else if (urlPath == indexPath) { // 主页
+        var titles = [] //array to titles
+
+        var postsstr = '' //if you have a better way to get titles of posts, please change it
+        eval(postsstr)
+
+        var promises = titles.map(function (title) {
+          return articles.doc(title)
+        }).map(function (doc) {
+          return getCount(doc)
+        })
+        Promise.all(promises).then(function (counts) {
+          // var metas = $('.post-meta')
+          var metas = $('.post-wordcount')
+          counts.forEach(function (val, idx) {
+            appendCountTo(metas[idx])(val)
+          })
+        })
+      }
+    })()
+  </script>
+
 
   
 <script>
